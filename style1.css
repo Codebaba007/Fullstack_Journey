@@ -1,0 +1,10 @@
+body{
+    h1{
+        color: red;
+    }
+    header{
+        background-color: whitesmoke;
+        color: black;
+    }
+    font-family: Arial, Helvetica, sans-serif;
+}
