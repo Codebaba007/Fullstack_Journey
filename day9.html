@@ -22,7 +22,7 @@
         }
  </style>
 <body>
-    <header>
+    <header id="header">
         <img src="img/me.jpeg" height="150" width="150">
         <hr>
         <h1>Portfolio</h1>
@@ -33,7 +33,7 @@
     </header>
     <hr>
     <br>
-    <nav>
+    <nav id="nav">
        <a href="#">Home</a> |
        <a href="#">About</a> |
        <a href="#">Projects</a> |
@@ -41,14 +41,19 @@
     </nav>
     <hr>
     <main>
-        <H1>About me</H1>
-        <p>
-           <h3> Hello! I'm Mehedi Hassan Bhuiyan</h3>
-           <h3>UITS - CSE Student</h3>
-           <b> Goal: Fullstack </b>
-        </p>
-        <hr>
-        <h1>Education</h1>
+        <section id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        Hello! I'm Mehedi Hassan Bhuiyan.
+    </p>
+
+    <p>
+        I am currently learning Full Stack Development.
+    </p>
+
+       </section>
         <table>
             <thead>
                 <tr>
@@ -69,13 +74,16 @@
         </table>
         <hr>
         <br>
-        <h1>TECNICAL SKILLS</h1>
+        <section id="skill">
+             <h1>TECNICAL SKILLS</h1>
         <ul>
             <li>HTML</li>
             <li>Git</li>
             <li>Github</li>
             <li>Learning CSS</li>
         </ul>
+        </section>
+       
         <hr>
         <h1>
             SOFT SKILLS
@@ -88,7 +96,8 @@
         </ul>
         <hr>
         <br>
-        <h1>Learning Roadmap</h1>
+        <section id="rm">
+             <h1>Learning Roadmap</h1>
         <ol>
             <li>HTML</li>
             <li>CSS</li>
@@ -102,15 +111,18 @@
             <li>Python</li>
             <li>AI</li>
         </ol>
+        </section>
+     
         <hr>
+        <section id="form">
         <br>
         <h1>Contact Form</h1>
-        <form action="Contact">
+        <form action="Contact" id="login">
             <label for="Name">Name</label>
             <input type="Text" id="name" placeholder="Enter Your Name">
             <br><br>
             <label for="Email">Email</label>
-            <input type="Email" placeholder="Enter Your Mail"><br><br>
+            <input type="Email" id="email" placeholder="Enter Your Mail"><br><br>
             <label for="msg">Message</label>
             <br>
             <textarea name="msg" id="msg"
@@ -119,10 +131,11 @@
                     placeholder="Write your message..."
             ></textarea>
             <br><br>
-            <button>Send</button>
+            <button class="primary">Send</button>
             <br>
             <hr>
-            <footer>
+        </section>
+            <footer id="footer">
                 <p>Created by Mehedi Hassan</p>
                 <p>2026 Student Portal</p>
                 <p>Github| Linkedin
