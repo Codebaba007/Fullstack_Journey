@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#F5F5F5;
+    color:#333;
+}
+
+h1{
+    font-size:3rem;
+}
+
+h2{
+    font-size:2rem;
+    color:#0B3D91;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+h3{
+    font-size:1.3rem;
+    margin-bottom:10px;
+}
+
+p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+header{
+    background:#0B3D91;
+    color:white;
+    text-align:center;
+    padding:80px 30px;
+}
+
+header h1{
+    margin-bottom:20px;
+}
+
+header p{
+    color:white;
+    font-size:1.1rem;
+    max-width:700px;
+    margin:0 auto 30px;
+}
+
+header button{
+    background:#8B5E3C;
+    color:white;
+}
+
+main{
+    padding:40px;
+}
+
+section{
+    background:white;
+    padding:30px;
+    margin-bottom:40px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+#services div{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+#services article{
+    width:250px;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-align:center;
+}
+
+#workflow ol{
+    padding-left:30px;
+}
+
+#workflow li{
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+#Techstack ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    list-style:none;
+}
+
+#Techstack li{
+    background:#0B3D91;
+    color:white;
+    padding:10px 18px;
+    border-radius:20px;
+}
+
+#team div{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+#team article{
+    width:250px;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-align:center;
+}
+
+#team img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:50%;
+    margin:15px 0;
+}
+
+#Client{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+#Client div{
+    width:300px;
+    background:#eee;
+    padding:20px;
+    border-radius:10px;
+}
+
+#Client p{
+    font-style:italic;
+}
+
+#Client h4{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+#FAQ b{
+    color:#0B3D91;
+}
+
+#FAQ p{
+    line-height:1.8;
+}
+
+form{
+    width:500px;
+    max-width:100%;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+textarea{
+    height:150px;
+    resize:vertical;
+}
+
+button{
+    background:#0B3D91;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#072b66;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer p{
+    color:white;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+#workflow li{
+    background:#0B3D91;
+    color:white;
+    padding:10px 18px;
+    border-radius:20px;
+}
+#why-us li{
+    background:#0B3D91;
+    color:white;
+    padding:10px 18px;
+    border-radius:20px;
+    line-height:1.8;
+    margin-bottom:10px;
+}
