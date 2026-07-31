@@ -1,50 +1,50 @@
-# Full-Stack Development Journey
+# Full Stack Development Journey
+
+> A structured, project-based journey from HTML fundamentals to becoming a full-stack software engineer.
+
+---
 
 ## About
 
-This repository documents my journey toward becoming a full-stack software engineer. It contains the projects, exercises, and practice work completed while learning modern web development.
+This repository documents my journey of learning modern web development through consistent, hands-on practice.
 
-The goal is to strengthen my understanding of web technologies through consistent hands-on practice and project-based learning.
+Each project represents a milestone in my learning process, introducing new concepts while reinforcing previously acquired skills. Rather than simply following tutorials, I focus on building practical projects that strengthen my understanding of software engineering principles and real-world development.
 
 ---
 
 ## Objectives
 
-- Build a strong foundation in HTML and CSS
-- Learn modern JavaScript and TypeScript
-- Develop responsive web applications
-- Learn React and backend development
-- Practice version control with Git and GitHub
+- Build a strong foundation in modern web development
+- Master HTML, CSS, JavaScript, and TypeScript
+- Learn React, Node.js, Express.js, and PostgreSQL
+- Develop responsive and accessible web applications
+- Apply software engineering best practices
+- Become proficient with Git and GitHub
 - Build production-ready full-stack applications
-
----
-
-## Technologies
-
-### Currently Learning
-
-- HTML5
-- CSS3
-- Responsive Web Design
-- Git
-- GitHub
-
-### Upcoming
-
-- JavaScript
-- TypeScript
-- React
-- Node.js
-- Express.js
-- PostgreSQL
-- Docker
+- Create a professional developer portfolio
 
 ---
 
 ## Repository Structure
 
 ```text
-Fullstack-Journey/
+Journey/
+
+├── Day-01-first-html-page/
+├── Day-02-text-formatting-and-lists/
+├── Day-03-portfolio-with-image-and-links/
+│
+├── ...
+│
+├── Day-21-pricing-page/
+│
+└── README.md
+```
+
+Each project folder contains:
+
+```text
+Day-XX-project-name/
 
 ├── index.html
 ├── style.css
@@ -52,47 +52,91 @@ Fullstack-Journey/
 └── README.md
 ```
 
-As I continue learning, this repository will grow with additional projects, folders, and technologies.
+---
+
+## Tech Stack
+
+### Currently Learning
+
+- HTML5
+- CSS3
+- Git
+- GitHub
+
+### Planned Learning
+
+- JavaScript (ES6+)
+- TypeScript
+- React
+- Node.js
+- Express.js
+- PostgreSQL
+- REST APIs
+- Docker
+- GitHub Actions
+- Cloud Deployment
 
 ---
 
-## Topics Covered
+## Repository Highlights
 
-- HTML Fundamentals
-- Semantic HTML
-- Forms
-- Tables
-- CSS Fundamentals
-- Flexbox
+- Daily hands-on coding projects
+- Practical web development exercises
+- Responsive web layouts
+- Portfolio websites
+- Landing pages
+- Forms and validation
+- Navigation systems
+- CSS Flexbox
 - CSS Grid
-- Responsive Design
-- Media Queries
+- Project documentation
 
 ---
 
-## Purpose
+## Learning Philosophy
 
-This repository serves as a record of my learning progress and practical experience while studying modern web development.
+I believe that consistency is the key to mastering software development.
 
-Each update represents new concepts, improved coding practices, and continued growth as a software developer.
+Every project in this repository builds upon previous knowledge, creating a structured learning path from the fundamentals of web development to full-stack application development. The focus is not only on writing code but also on understanding the reasoning behind each concept and applying industry best practices.
 
 ---
 
-## Future Goals
+## Learning Roadmap
 
-- Learn JavaScript
-- Build interactive web applications
-- Learn React
-- Develop backend applications with Node.js
-- Work with databases
-- Deploy full-stack projects
+- Completed
+  - HTML5
+  - CSS3
+
+- In Progress
+  - JavaScript
+
+- Planned
+  - TypeScript
+  - React
+  - Node.js & Express.js
+  - PostgreSQL
+  - REST APIs
+  - Authentication & Authorization
+  - Docker & CI/CD
+  - Cloud Deployment
+  - Full Stack Applications
 
 ---
 
 ## Author
 
-**Mehedi Hasan**
+### Mehedi Hasan
 
-Computer Science & Engineering Student
+**Computer Science & Engineering Student**
 
-Interested in Software Engineering, Artificial Intelligence, Cloud Computing, and Full-Stack Development.
+Passionate about building reliable software through continuous learning and project-based development.
+
+**Areas of Interest**
+
+- Software Engineering
+- Artificial Intelligence
+- Cloud Computing
+- Full-Stack Development
+
+---
+> *"Ran out of quotes. I don't know why I added one here, but consistency demanded that I write something."*
