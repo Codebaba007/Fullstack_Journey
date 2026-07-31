@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#F8FAFC;
+    color:#1F2937;
+
+}
+
+.container{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+}
+
+header{
+
+    background:white;
+    padding:20px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.navbar{
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.logo{
+
+    text-align:center;
+
+}
+
+.logo img{
+
+    width:180px;
+    height:auto;
+
+}
+
+.hero{
+
+    text-align:center;
+    padding:70px 20px;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+    color:#2563EB;
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+    color:#6B7280;
+
+}
+
+/* Pricing */
+
+.pricing{
+
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    align-items:stretch;
+
+}
+
+.card{
+
+    display:grid;
+
+    grid-template-rows:auto auto 1fr auto;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:16px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-100px);
+
+}
+
+.card h2{
+
+    margin-bottom:15px;
+
+}
+
+.card h3{
+
+    color:#2563EB;
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+}
+
+.card h3 span{
+
+    font-size:16px;
+
+    color:#777;
+
+}
+
+.card ul{
+
+    list-style:none;
+
+    margin:30px 0;
+
+}
+
+.card li{
+
+    margin:16px 0;
+
+}
+
+.card button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.card button:hover{
+
+    background-color: blue;
+
+}
+
+.featured{
+
+    border:3px solid #F59E0B;
+
+    transform:scale(1.05);
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    background:#F59E0B;
+
+    color:white;
+
+    padding:6px 15px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    margin-bottom:20px;
+
+}
+
+/* FAQ */
+
+.faq{
+
+    width:90%;
+    max-width:900px;
+
+    margin:90px auto;
+
+}
+
+.faq h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.question{
+
+    background:white;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.06);
+
+}
+
+.question h4{
+
+    margin-bottom:10px;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .hero h1{
+
+        font-size:36px;
+
+    }
+
+    .featured{
+
+        transform:scale(1);
+
+    }
+
+}
