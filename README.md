@@ -1,3 +1,4 @@
+
 # Full Stack Development Journey
 
 > A structured, project-based journey from HTML fundamentals to becoming a full-stack software engineer.
