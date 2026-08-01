@@ -1,4 +1,3 @@
-
 # Full Stack Development Journey
 
 > A structured, project-based journey from HTML fundamentals to becoming a full-stack software engineer.
@@ -9,7 +8,7 @@
 
 This repository documents my journey of learning modern web development through consistent, hands-on practice.
 
-Each project represents a milestone in my learning process, introducing new concepts while reinforcing previously acquired skills. Rather than simply following tutorials, I focus on building practical projects that strengthen my understanding of software engineering principles and real-world development.
+Each project represents a milestone in my learning process, introducing new concepts while reinforcing previously acquired skills. Rather than simply following tutorials, I focus on building practical projects that strengthen my understanding of software engineering principles, problem-solving, and real-world development practices.
 
 ---
 
@@ -18,7 +17,7 @@ Each project represents a milestone in my learning process, introducing new conc
 - Build a strong foundation in modern web development
 - Master HTML, CSS, JavaScript, and TypeScript
 - Learn React, Node.js, Express.js, and PostgreSQL
-- Develop responsive and accessible web applications
+- Develop responsive, accessible, and maintainable web applications
 - Apply software engineering best practices
 - Become proficient with Git and GitHub
 - Build production-ready full-stack applications
@@ -37,7 +36,7 @@ Journey/
 │
 ├── ...
 │
-├── Day-21-pricing-page/
+├── Day-22-css-transitions-and-transforms/
 │
 └── README.md
 ```
@@ -57,22 +56,24 @@ Day-XX-project-name/
 
 ## Tech Stack
 
-### Currently Learning
+### Completed
 
 - HTML5
 - CSS3
-- Git
-- GitHub
+
+### Currently Learning
+
+- JavaScript (ES6+)
 
 ### Planned Learning
 
-- JavaScript (ES6+)
 - TypeScript
 - React
 - Node.js
 - Express.js
 - PostgreSQL
 - REST APIs
+- Authentication & Authorization
 - Docker
 - GitHub Actions
 - Cloud Deployment
@@ -90,6 +91,8 @@ Day-XX-project-name/
 - Navigation systems
 - CSS Flexbox
 - CSS Grid
+- CSS Transitions & Transforms
+- Component-based UI design
 - Project documentation
 
 ---
@@ -98,29 +101,33 @@ Day-XX-project-name/
 
 I believe that consistency is the key to mastering software development.
 
-Every project in this repository builds upon previous knowledge, creating a structured learning path from the fundamentals of web development to full-stack application development. The focus is not only on writing code but also on understanding the reasoning behind each concept and applying industry best practices.
+Every project in this repository builds upon previous knowledge, creating a structured learning path from the fundamentals of web development to full-stack application development. My focus is not only on writing code but also on understanding why each solution works, writing clean and maintainable code, and following industry best practices.
 
 ---
 
 ## Learning Roadmap
 
-- Completed
-  - HTML5
-  - CSS3
+### Completed
 
-- In Progress
-  - JavaScript
+- HTML5
+- CSS3
 
-- Planned
-  - TypeScript
-  - React
-  - Node.js & Express.js
-  - PostgreSQL
-  - REST APIs
-  - Authentication & Authorization
-  - Docker & CI/CD
-  - Cloud Deployment
-  - Full Stack Applications
+### Currently Learning
+
+- JavaScript (ES6+)
+
+### Planned
+
+- TypeScript
+- React
+- Node.js & Express.js
+- PostgreSQL
+- REST APIs
+- Authentication & Authorization
+- Docker
+- GitHub Actions
+- Cloud Deployment
+- Full Stack Applications
 
 ---
 
@@ -130,7 +137,7 @@ Every project in this repository builds upon previous knowledge, creating a stru
 
 **Computer Science & Engineering Student**
 
-Passionate about building reliable software through continuous learning and project-based development.
+Passionate about building reliable software through continuous learning, project-based development, and solving real-world problems.
 
 **Areas of Interest**
 
@@ -140,4 +147,5 @@ Passionate about building reliable software through continuous learning and proj
 - Full-Stack Development
 
 ---
+
 > *"Ran out of quotes. I don't know why I added one here, but consistency demanded that I write something."*
