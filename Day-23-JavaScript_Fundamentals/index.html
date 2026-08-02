@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+    <article class="student-card">
+
+        <header>
+            <h1>Student Information</h1>
+        </header>
+
+        <section class="profile">
+
+            <img src="assest/me.jpeg" alt="Student Photo">
+
+            <div class="info">
+
+                <p><strong>Name: </strong> <span id="studentName"></span></p>
+
+                <p><strong>Student ID: </strong> <span id="studentId"></span></p>
+
+                <p><strong>Age: </strong> <span id="studentAge"></span></p>
+
+                <p><strong>Department: </strong> <span id="department"></span></p>
+
+                <p><strong>University: </strong> <span id="university"></span></p>
+
+                <p><strong>Semester: </strong> <span id="semester"></span></p>
+
+                <p><strong>CGPA: </strong> <span id="cgpa"></span></p>
+
+                <p><strong>Enrolled: </strong> <span id="enrolled"></span></p>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h2>Current Courses</h2>
+
+            <ul>
+                <li>Compiler Design</li>
+                <li>Web Engineering</li>
+                <li>Artificial Intelligence</li>
+            </ul>
+
+        </section>
+
+        <footer>
+
+            <button id="showInfoBtn">
+                Show Student Info
+            </button>
+
+            <button id="semesterBtn">
+                Increase Semester
+            </button>
+
+        </footer>
+
+    </article>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
