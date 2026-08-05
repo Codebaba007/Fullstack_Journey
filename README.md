@@ -92,7 +92,7 @@ The emphasis is placed on understanding core concepts, writing maintainable code
 
 ## Author
 
-**Mehedi Hasan**
+**Mehedi Hasan Bhuiyan**
 
 Computer Science & Engineering Student
 
