@@ -1,151 +1,87 @@
-# Full Stack Development Journey
+# Day 26 - JavaScript Functions
 
-> A structured, project-based journey from HTML fundamentals to becoming a full-stack software engineer.
+## Overview
 
----
+This project introduces JavaScript functions and demonstrates how reusable code can simplify application development. The Student Eligibility Dashboard has been refactored by replacing repeated DOM update logic with a reusable function, making the code cleaner, easier to read, and easier to maintain.
 
-## About
-
-This repository documents my journey of learning modern web development through consistent, hands-on practice.
-
-Each project represents a milestone in my learning process, introducing new concepts while reinforcing previously acquired skills. Rather than simply following tutorials, I focus on building practical projects that strengthen my understanding of software engineering principles, problem-solving, and real-world development practices.
+The project emphasizes the importance of writing reusable code instead of duplicating the same logic multiple times.
 
 ---
 
-## Objectives
+## Topics Covered
 
-- Build a strong foundation in modern web development
-- Master HTML, CSS, JavaScript, and TypeScript
-- Learn React, Node.js, Express.js, and PostgreSQL
-- Develop responsive, accessible, and maintainable web applications
-- Apply software engineering best practices
-- Become proficient with Git and GitHub
-- Build production-ready full-stack applications
-- Create a professional developer portfolio
-
----
-
-## Repository Structure
-
-```text
-Journey/
-
-├── Day-01-first-html-page/
-├── Day-02-text-formatting-and-lists/
-├── Day-03-portfolio-with-image-and-links/
-│
-├── ...
-│
-├── Day-22-css-transitions-and-transforms/
-│
-└── README.md
-```
-
-Each project folder contains:
-
-```text
-Day-XX-project-name/
-
-├── index.html
-├── style.css
-├── assets/
-└── README.md
-```
+- JavaScript Functions
+- Function Declaration
+- Function Invocation
+- Parameters
+- Arguments
+- Code Reusability
+- DRY (Don't Repeat Yourself) Principle
+- Event Handling
+- DOM Manipulation
+- Conditional Logic
 
 ---
 
-## Tech Stack
+## Features
 
-### Completed
+- Interactive Student Eligibility Dashboard
+- Scholarship eligibility checker
+- Graduation eligibility checker
+- Dynamic result updates
+- Reusable `showResult()` function
+- Cleaner and more maintainable JavaScript code
+- Responsive dashboard interface
+
+---
+
+## Technologies Used
 
 - HTML5
 - CSS3
-
-### Currently Learning
-
-- JavaScript (ES6+)
-
-### Planned Learning
-
-- TypeScript
-- React
-- Node.js
-- Express.js
-- PostgreSQL
-- REST APIs
-- Authentication & Authorization
-- Docker
-- GitHub Actions
-- Cloud Deployment
+- JavaScript (ES6)
 
 ---
 
-## Repository Highlights
+## JavaScript Concepts Practiced
 
-- Daily hands-on coding projects
-- Practical web development exercises
-- Responsive web layouts
-- Portfolio websites
-- Landing pages
-- Forms and validation
-- Navigation systems
-- CSS Flexbox
-- CSS Grid
-- CSS Transitions & Transforms
-- Component-based UI design
-- Project documentation
+### Functions
 
----
+- Function Declaration
+- Function Calling
+- Parameters
+- Arguments
 
-## Learning Philosophy
+### DOM Manipulation
 
-I believe that consistency is the key to mastering software development.
+- `document.getElementById()`
+- `textContent`
 
-Every project in this repository builds upon previous knowledge, creating a structured learning path from the fundamentals of web development to full-stack application development. My focus is not only on writing code but also on understanding why each solution works, writing clean and maintainable code, and following industry best practices.
+### Events
 
----
+- `addEventListener()`
+- `click`
 
-## Learning Roadmap
+### Conditional Statements
 
-### Completed
-
-- HTML5
-- CSS3
-
-### Currently Learning
-
-- JavaScript (ES6+)
-
-### Planned
-
-- TypeScript
-- React
-- Node.js & Express.js
-- PostgreSQL
-- REST APIs
-- Authentication & Authorization
-- Docker
-- GitHub Actions
-- Cloud Deployment
-- Full Stack Applications
+- `if`
+- `if...else`
 
 ---
 
-## Author
+## Learning Outcome
 
-### Mehedi Hasan
-
-**Computer Science & Engineering Student**
-
-Passionate about building reliable software through continuous learning, project-based development, and solving real-world problems.
-
-**Areas of Interest**
-
-- Software Engineering
-- Artificial Intelligence
-- Cloud Computing
-- Full-Stack Development
+Through this project, I learned how to create and use JavaScript functions to eliminate repeated code. I practiced passing data to functions using parameters and arguments while combining functions with DOM manipulation and event listeners to build a cleaner and more maintainable interactive web application.
 
 ---
 
-> *"Ran out of quotes. I don't know why I added one here, but consistency demanded that I write something."*
+## Future Improvements
+
+Future versions of this project will include:
+
+- Functions with return values
+- Multiple function parameters
+- Dynamic result styling
+- Object-based student data
+- Reusable validation functions
+- Improved UI feedback and animations
