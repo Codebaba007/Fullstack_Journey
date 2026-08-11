@@ -1,0 +1,171 @@
+/* Basic page styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+.dashboard-header {
+    background-color: #123b63;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.dashboard-header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.dashboard-header p {
+    font-size: 17px;
+    color: #dbeafe;
+}
+
+/* Main content */
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+section h2 {
+    font-size: 24px;
+    color: #123b63;
+    margin-bottom: 20px;
+}
+
+/* Student cards */
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.student-card {
+    background-color: white;
+    border: 1px solid #dbe3ec;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.student-card h3 {
+    color: #123b63;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.student-card p {
+    margin-bottom: 8px;
+    color: #4b5563;
+}
+
+.student-card strong {
+    color: #1f2937;
+}
+
+/* Array information */
+.array-section {
+    background-color: white;
+    border-left: 5px solid #2563eb;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.array-section h2 {
+    margin-bottom: 10px;
+}
+
+#studentCount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* Result section */
+.result-section {
+    background-color: white;
+    border-left: 5px solid #16a34a;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.result-section h2 {
+    margin-bottom: 10px;
+}
+
+#resultText {
+    color: #4b5563;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #123b63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+    .student-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-header h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 550px) {
+    .student-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-header {
+        padding: 30px 0;
+    }
+
+    .dashboard-header h1 {
+        font-size: 24px;
+    }
+
+    .dashboard-header p {
+        font-size: 15px;
+    }
+
+    main {
+        padding: 30px 0;
+    }
+
+    .student-card,
+    .array-section,
+    .result-section {
+        padding: 20px;
+    }
+}
