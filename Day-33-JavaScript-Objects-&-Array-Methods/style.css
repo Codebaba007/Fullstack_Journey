@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+header {
+    background-color: #164e63;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.student-profile {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
+}
+
+.image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.student-info {
+    flex: 1;
+}
+
+.student-info p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.student-info strong {
+    display: inline-block;
+    min-width: 150px;
+}
+
+.eligibility {
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.eligibility h2,
+.result h2 {
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.result {
+    padding: 30px 40px 40px;
+    text-align: center;
+}
+
+.result-box {
+    padding: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f8fafc;
+}
+
+#resultText {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #164e63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .student-profile {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .student-info strong {
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    .eligibility,
+    .result {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
