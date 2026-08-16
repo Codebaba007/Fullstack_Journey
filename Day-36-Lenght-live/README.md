@@ -1,59 +1,22 @@
-# Day 37 - JavaScript Basic Form Validation
+# Day 36 - JavaScript String Length & Live Character Counter
 
 ## Overview
 
-Day 37 focuses on basic form validation using JavaScript.
+Day 36 focuses on using JavaScript's `.length` property to determine the number of characters in a string.
 
-In previous lessons, I learned how to work with user input and dynamically update the webpage using the DOM.
-
-I learned how to:
+In previous lessons, I learned how to:
 
 - Read user input using `.value`
-- Respond to user actions using event listeners
-- Use the `input` event
+- Respond to user actions using the `input` event
 - Update webpage content using `.textContent`
-- Use the `.length` property
-- Handle empty input
+- Use `if` statements and `return`
+- Work with the DOM
 
-In this project, I built a basic Student Name Validation feature.
+In this project, I combined those concepts with the `.length` property to create a live character counter.
 
-The user can enter a student name and click the Validate Name button. JavaScript checks the input and displays an appropriate message depending on whether a valid name was entered.
+The user can type text into an input field, and JavaScript immediately counts the number of characters and displays the result on the webpage.
 
-The project also introduces the `trim()` method, which removes unnecessary whitespace from the beginning and end of a string.
+For example:
 
----
-
-## Project Objective
-
-The main objective of Day 37 was to learn how to:
-
-- Read user input from an HTML input field
-- Use `.trim()` to remove unnecessary whitespace
-- Check whether a string is empty
-- Use `if / else` for validation
-- Respond to button clicks
-- Display validation messages dynamically
-- Use `console.log()` for debugging
-- Understand and fix a JavaScript `ReferenceError`
-
----
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- DOM API
-- Git & GitHub
-- Live Server
-
----
-
-# Concepts Learned
-
-## 1. Reading User Input
-
-The value entered into an input field can be accessed using `.value`.
-
-```javascript
-const name = nameInput.value;
+```text
+Characters: 0 / 50
