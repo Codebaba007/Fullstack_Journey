@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Eligibility Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Student Eligibility Dashboard</h1>
+            <p>University Student Management System</p>
+        </header>
+
+        <!-- University Information -->
+        <section class="university-info">
+            <h2>University Information</h2>
+            <p><strong>University:</strong> ABC University</p>
+            <p><strong>Department:</strong> Computer Science & Engineering</p>
+            <p><strong>Academic Year:</strong> 2025–2026</p>
+        </section>
+
+        <!-- Student Profile -->
+        <section class="student-profile">
+            <h2>Student Profile</h2>
+
+            <div class="profile-content">
+                <img
+                    src="assets/me.jpeg"
+                    alt="Student profile image"
+                    class="profile-image"
+                >
+
+                <div class="student-info">
+                    <p><strong>Name:</strong> <span id="studentName">John Doe</span></p>
+                    <p><strong>Student ID:</strong> <span id="displayStudentId">1001</span></p>
+                    <p><strong><span id="displayDepartment">Computer Science</span></strong></p>
+                    <p><strong><span id="displaySemester">6th Semester</span></strong></p>
+                    <p><strong>Email:</strong> john.doe@example.com</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eligibility Checks -->
+        <section class="eligibility-checks">
+            <h2>Eligibility Checks</h2>
+
+            <!-- Student Search -->
+            <div class="search-box">
+                <input
+                    type="number"
+                    id="studentIdInput"
+                    placeholder="Enter Student ID"
+                >
+
+                <button id="searchBtn">
+                    Search Student
+                </button>
+            </div>
+
+            <!-- Existing Eligibility Buttons -->
+            <div class="eligibility-buttons">
+                <button id="scholarshipBtn" class="eligibility-btn">
+    Check Scholarship
+</button>
+
+<button id="graduationBtn" class="eligibility-btn">
+    Check Graduation
+</button>
+
+<button id="attendanceBtn" class="eligibility-btn">
+    Check Attendance
+</button>
+            </div>
+        </section>
+        <section class="input-practice">
+    <h2>Live Input Practice</h2>
+
+    <input
+        type="text"
+        id="liveInput"
+        placeholder="Type something..."
+    >
+
+    <p id="liveMessage">Start typing...</p>
+</section>
+<section class="character-counter">
+    <h2>Character Counter</h2>
+
+    <input
+        type="text"
+        id="characterInput"
+        placeholder="Write something..."
+        maxlength="50"
+    >
+
+    <p id="characterCount">Characters: 0 / 50</p>
+    <section class="name-validation">
+    <h2>Student Validation</h2>
+
+    <label for="nameInput">Student Name</label>
+
+    <input
+        type="text"
+        id="nameInput"
+        placeholder="Enter your name"
+    >
+
+    <button id="validateBtn">Validate Name</button>
+
+    <p id="validationMessage">Enter your name to continue.</p>
+</section>
+<section class="student-information-validation">
+    <h2>Student Information</h2>
+
+    <label for="studentNameInput">Student Name</label>
+    <input
+        type="text"
+        id="studentNameInput"
+        placeholder="Enter student name"
+    >
+
+    <label for="studentIdValidationInput">Student ID</label>
+    <input
+        type="number"
+        id="studentIdValidationInput"
+        placeholder="Enter student ID"
+    >
+
+    <button id="validateStudentBtn">Validate Student</button>
+
+    <p id="studentValidationMessage">
+        Enter student information to continue.
+    </p>
+</section>
+</section>
+
+        <!-- Result -->
+        <section class="result">
+            <h2>Result</h2>
+            <p id="resultMessage">
+                Eligibility results will appear here.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 ABC University. All rights reserved.</p>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
