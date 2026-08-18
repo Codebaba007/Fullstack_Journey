@@ -49,5 +49,5 @@ HTML input values are received as strings.
 
 JavaScript's `Number()` function can convert the input value into a number.
 
-```javascript
+```javascript1
 const studentId = Number(studentIdValidationInput.value);
