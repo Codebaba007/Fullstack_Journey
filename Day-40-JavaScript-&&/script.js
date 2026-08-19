@@ -37,6 +37,7 @@ const studentValidationMessage = document.getElementById("studentValidationMessa
 validateStudentBtn.addEventListener("click", function() {
 
     const studentName = studentNameInput.value.trim();
+
     const studentId = Number(studentIdValidationInput.value);
 
     console.log("Student Name:", studentName);
@@ -52,12 +53,9 @@ validateStudentBtn.addEventListener("click", function() {
         studentValidationMessage.textContent =
             "Student ID must be between 2026001 and 2026999.";
 
-    } else if (studentName.length < 3 && studentName.length > 0) {
-
-        studentValidationMessage.textContent =
-            "Student name must contain at least 3 characters.";
-
-    } else {
+    } 
+    
+    else {
 
         studentValidationMessage.textContent =
             "Student information is valid.";
