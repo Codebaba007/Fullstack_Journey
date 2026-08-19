@@ -10,7 +10,7 @@ This builds directly on the validation logic from previous days.
 
 The Student Information Validation project is extended so that the student's name must contain at least 3 characters.
 
----
+----
 
 ## Project Objective
 
