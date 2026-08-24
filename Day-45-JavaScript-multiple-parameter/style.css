@@ -1,0 +1,279 @@
+/* =========================
+   General Styles
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+.dashboard {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.header {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.header h1 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #777;
+}
+
+
+/* =========================
+   Common Section Styles
+========================= */
+
+.university-info,
+.student-profile,
+.eligibility-checks,
+.result {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.university-info h2,
+.student-profile h2,
+.eligibility-checks h2,
+.result h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* =========================
+   University Information
+========================= */
+
+.university-info p {
+    margin-bottom: 8px;
+}
+
+.university-info strong {
+    color: #2c3e50;
+}
+
+
+/* =========================
+   Student Profile
+========================= */
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4a90e2;
+}
+
+.student-info p {
+    margin-bottom: 8px;
+}
+
+.student-info strong {
+    color: #2c3e50;
+}
+
+
+/* =========================
+   Student ID Search
+========================= */
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 25px 0 30px;
+}
+
+.search-box input {
+    width: 260px;
+    height: 46px;
+    padding: 0 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+.search-box input::placeholder {
+    color: #999;
+}
+
+
+/* =========================
+   Search Button
+========================= */
+
+#searchBtn {
+    height: 46px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+#searchBtn:hover {
+    background-color: #357abd;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   Eligibility Buttons
+========================= */
+
+.eligibility-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.eligibility-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.eligibility-btn:hover {
+    background-color: #357abd;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   Result
+========================= */
+
+.result {
+    text-align: center;
+}
+
+#resultMessage {
+    color: #777;
+    font-size: 16px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 600px) {
+
+    .dashboard {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .header {
+        padding: 25px 15px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .university-info,
+    .student-profile,
+    .eligibility-checks,
+    .result {
+        padding: 20px;
+    }
+
+    /* Student profile stacks */
+    .profile-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    /* Search stacks vertically */
+    .search-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-box input,
+    #searchBtn {
+        width: 100%;
+    }
+
+    /* Eligibility buttons stack */
+    .eligibility-buttons {
+        flex-direction: column;
+    }
+
+    .eligibility-btn {
+        width: 100%;
+    }
+}
