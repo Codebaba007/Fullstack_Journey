@@ -1,35 +1,34 @@
-# Day 50 - JavaScript map()
+# Day 51 - JavaScript filter()
 
 ## Overview
 
-Day 50 focuses on the JavaScript `map()` array method.
-
-In Day 49, I learned how `forEach()` uses callback functions to perform an operation for every item in an array. Day 50 builds directly on that concept by introducing `map()`, which also uses a callback function but is designed for a different purpose.
-
-The main purpose of `map()` is to transform every item in an array and create a new array containing the transformed results. The callback receives the current item, performs the required transformation, and returns a value. `map()` then collects those returned values into a new array.
-
-Throughout this lesson, the Student Information project was used to practice `map()` with realistic data. I worked with arrays of numbers, student objects, object properties, strings, calculated values, indexes, new objects, and conditional logic.
+Day 51 focuses on the JavaScript `filter()` array method. In Day 50, I learned how `map()` can transform every item in an array and create a new array containing the transformed results. Day 51 builds on that concept by introducing `filter()`, which is used for a different purpose. Instead of transforming every item, `filter()` checks each item against a condition and keeps only the items for which the condition evaluates to `true`. The main idea behind `filter()` is selection. When working with an array of data, I can use `filter()` to select only the items that meet specific requirements while leaving the original array unchanged. This is especially useful when working with collections of objects such as students, products, users, or database results. Throughout this lesson, the Student Information project was used to practice filtering student data. I worked with numerical conditions, object properties, strings, multiple conditions, logical operators, indexes, and method chaining. I also learned how `filter()` can be combined with `map()` to first select the required data and then transform it.
 
 ---
 
 ## Project Objective
 
-The objectives of Day 50 were:
+The objectives of Day 51 were:
 
-- Understand the `map()` method
-- Understand how `map()` works with callback functions
-- Understand why `map()` creates a new array
-- Understand the difference between `map()` and `forEach()`
-- Transform numbers using `map()`
-- Extract information from objects
-- Transform objects into strings
-- Transform objects into numbers
-- Transform objects into new objects
-- Use indexes inside a `map()` callback
-- Perform calculations during transformations
-- Use conditional logic during transformations
-- Preserve the original array
-- Apply `map()` to the Student Information project
+- Understand the `filter()` method
+- Understand how `filter()` uses callback functions
+- Understand the boolean result required by `filter()`
+- Understand the difference between `filter()` and `map()`
+- Filter arrays of numbers
+- Filter arrays of objects
+- Filter objects using their properties
+- Use comparison operators with `filter()`
+- Use `&&` with `filter()`
+- Use `||` with `filter()`
+- Use `!==` with `filter()`
+- Use multiple conditions
+- Use parentheses to control complex conditions
+- Use strings as filtering conditions
+- Use the array index inside a filter callback
+- Understand what `filter()` returns
+- Combine `filter()` and `map()`
+- Use method chaining
+- Preserve the original array while creating filtered results
 
 ---
 
@@ -48,353 +47,149 @@ The objectives of Day 50 were:
 
 # Concepts Learned
 
-## 1. The `map()` Method
+## 1. The `filter()` Method
 
-`map()` is a JavaScript array method used to transform every item in an array.
-
-It executes a callback function once for every item and uses the value returned by that callback to create a new array.
+`filter()` is a JavaScript array method used to create a new array containing only the items that pass a condition.
 
 The basic structure is:
 
 ```javascript
-const newArray = array.map((item) => {
-    return transformedValue;
+const newArray = array.filter((item) => {
+    return condition;
 });
 ```
 
-The important part is the `return`. For every item in the original array, the callback produces a result, and `map()` collects those results into a new array.
+The callback runs once for every item in the array.
 
-The general process is:
+The callback must return a value that can be evaluated as `true` or `false`.
+
+The basic process is:
 
 ```text
 Original Array
       ↓
-    map()
+    filter()
       ↓
-Callback runs for each item
+Check each item
       ↓
-Each callback returns a value
-      ↓
-Returned values are collected
+true  → KEEP
+false → REMOVE
       ↓
 New Array
 ```
 
-This makes `map()` useful when existing data needs to be converted into another form.
+Unlike `map()`, the goal of `filter()` is not to transform every item. The goal is to decide which items should remain in the resulting array.
 
 ---
 
-## 2. `map()` and Callback Functions
+## 2. The Boolean Result
 
-The callback concept learned on Day 48 is directly used with `map()`.
-
-A callback is a function that is passed into another function. With `map()`, the callback describes how each array item should be transformed.
+The callback used by `filter()` must produce a condition that determines whether an item stays in the new array.
 
 For example:
 
 ```javascript
-numbers.map((number) => {
-    return number * 2;
+const largeNumbers = numbers.filter((number) => {
+    return number > 25;
 });
 ```
 
-The arrow function is the callback.
+The condition:
 
-`map()` passes each number into the callback. The callback performs the transformation and returns the result.
+```javascript
+number > 25
+```
 
-This means the callback is responsible for defining the transformation while `map()` handles going through the array and collecting the returned results.
+produces either `true` or `false`.
+
+The behavior is:
+
+```text
+true  → keep the item
+false → remove the item
+```
+
+For example:
+
+```text
+10 > 25 → false → REMOVE
+20 > 25 → false → REMOVE
+30 > 25 → true  → KEEP
+40 > 25 → true  → KEEP
+```
+
+This is the fundamental behavior of `filter()`.
 
 ---
 
-## 3. Why `return` Matters in `map()`
+## 3. `filter()` with Student Objects
 
-The `return` statement is an important part of using `map()`.
+The Student Information project was used to practice `filter()` with objects.
+
+The student data contains objects with properties such as:
+
+```text
+name
+cgpa
+department
+```
+
+A student can be selected by checking one of these properties.
 
 For example:
 
 ```javascript
-const doubledNumbers = numbers.map((number) => {
-    return number * 2;
+const scholarshipStudents = students.filter((student) => {
+    return student.cgpa >= 3.75;
 });
 ```
 
-Each callback execution returns a transformed number. `map()` then uses those returned values to create the new array.
+Here, `filter()` checks the CGPA of every student.
+
+Students meeting the requirement are kept while students below the requirement are removed from the new array.
+
+The original `students` array remains unchanged.
+
+---
+
+## 4. `filter()` vs `map()`
+
+Understanding the difference between `filter()` and `map()` was one of the most important parts of Day 51.
+
+`map()` answers:
+
+> What should every item become?
+
+`filter()` answers:
+
+> Which items should stay?
 
 The mental model is:
 
 ```text
-Current Item
-      ↓
-Callback
-      ↓
-Transformation
-      ↓
-return
-      ↓
-map() collects result
-      ↓
-New Array
-```
-
-This connects directly with the function `return` concept learned earlier in the journey.
-
----
-
-## 4. `map()` vs `forEach()`
-
-One of the most important concepts of Day 50 was understanding the difference between `map()` and `forEach()`.
-
-Both methods use callback functions and process array items one at a time, but they are designed for different purposes.
-
-`forEach()` is mainly used when an action needs to be performed for every item. For example, printing every student's name is an action.
-
-`map()` is used when every item needs to be transformed and the transformed values need to be stored in a new array.
-
-The difference can be summarized as:
-
-```text
-forEach()
-    ↓
-Perform an action for every item
-
-
 map()
-    ↓
+ ↓
 Transform every item
-    ↓
-Return a value
-    ↓
-Create a new array
+ ↓
+Return a new value
+ ↓
+New array
 ```
 
-A callback can return a value inside `forEach()`, but `forEach()` itself does not collect those returned values into a new array.
+while:
 
-This became clear during practice when I tried to assign the result of `forEach()` to a variable and received `undefined`.
-
-`map()` is specifically designed to collect callback return values into a new array.
-
----
-
-## 5. Transforming Numbers
-
-The first `map()` exercises used simple arrays of numbers to understand the basic behavior of transformation.
-
-Each number was transformed into another value, such as doubling the number or increasing it by a specific amount.
-
-The original array remained available while the transformed values were stored in a separate array.
-
-This provided a simple introduction to the concept before applying `map()` to more complex student objects.
-
----
-
-## 6. Extracting Student Information
-
-The Student Information project was used to practice `map()` with objects.
-
-The students array contains objects with properties such as `name` and `cgpa`.
-
-Using `map()`, I learned how to transform an array of student objects into an array containing only student names.
-
-The same approach can be used to create an array containing only CGPA values.
+```text
+filter()
+ ↓
+Check every item
+ ↓
+true  → keep
+false → remove
+ ↓
+New array
+```
 
 For example:
-
-```javascript
-const studentNames = students.map((student) => student.name);
-```
-
-The original student objects remain unchanged.
-
-The result is a new array containing the selected property from every student.
-
----
-
-## 7. Transforming Objects into Strings
-
-`map()` can transform objects into formatted strings.
-
-Student information can be combined into a message containing the student's name and CGPA.
-
-The transformation follows this general process:
-
-```text
-Student Object
-      ↓
-Access Properties
-      ↓
-Combine Information
-      ↓
-String
-```
-
-This is useful when application data needs to be converted into a format that can be displayed to a user.
-
----
-
-## 8. Transforming Objects into New Objects
-
-`map()` can also return a completely new object.
-
-An existing student object can be transformed into a new object containing selected properties and additional information.
-
-For example, a transformed student object can contain:
-
-```text
-number
-name
-cgpa
-message
-```
-
-The callback creates and returns the new object.
-
-The structure becomes:
-
-```text
-Original Students
-      ↓
-    map()
-      ↓
-New Student Objects
-      ↓
-New Array
-```
-
-This is useful when an application needs a different data structure from the original data.
-
----
-
-## 9. Using the Index with `map()`
-
-The `map()` callback can receive the current index.
-
-The callback can be written as:
-
-```javascript
-students.map((student, index) => {
-    // transformation
-});
-```
-
-The parameters represent:
-
-```text
-student → current item
-index → current position
-```
-
-JavaScript arrays begin at index `0`.
-
-Therefore, `index + 1` can be used when creating human-readable student numbers.
-
-This allowed the Student Information project to create student numbers such as:
-
-```text
-Student 1
-Student 2
-Student 3
-```
-
-while the actual array indexes remain:
-
-```text
-0
-1
-2
-```
-
----
-
-## 10. Performing Calculations with `map()`
-
-`map()` can perform calculations while transforming data.
-
-In the Student Information project, CGPA values were used to calculate student percentages.
-
-The calculation used was:
-
-```text
-percentage = CGPA × 25
-```
-
-Each student was processed individually.
-
-For example:
-
-```text
-CGPA
- ↓
-Multiply by 25
- ↓
-Percentage
-```
-
-The calculated value could then be stored inside a new student result object.
-
-This demonstrated that `map()` can be used for actual data processing and transformation rather than only extracting properties.
-
----
-
-## 11. Using Conditional Logic with `map()`
-
-Conditional logic can be used during a `map()` transformation.
-
-The calculated student percentage was used to determine a performance status.
-
-The rules used were:
-
-```text
-Percentage >= 95 → Excellent
-Percentage >= 90 → Good
-Otherwise → Average
-```
-
-Each student was evaluated independently.
-
-The resulting status could then be stored inside a new student result object.
-
-This combined several previously learned concepts:
-
-- Variables
-- Objects
-- Object properties
-- Calculations
-- `if`
-- `else if`
-- `else`
-- Comparison operators
-- `map()`
-- `return`
-
----
-
-## 12. Preserving the Original Array
-
-Another important concept learned was that `map()` creates a new array.
-
-The original array remains available after the transformation.
-
-The general structure is:
-
-```text
-students
-   ↓
-map()
-   ↓
-studentResults
-```
-
-The original student data can therefore be preserved while a separate array contains transformed information.
-
-This is useful when an application needs both the original data and a transformed version of that data.
-
----
-
-## 13. Implicit Return with `map()`
-
-Because `map()` is commonly used with arrow functions, implicit return can make simple transformations shorter.
-
-Instead of:
 
 ```javascript
 const studentNames = students.map((student) => {
@@ -402,87 +197,392 @@ const studentNames = students.map((student) => {
 });
 ```
 
-the same transformation can be written as:
+This transforms every student into a name.
+
+But:
 
 ```javascript
-const studentNames = students.map((student) => student.name);
+const qualifiedStudents = students.filter((student) => {
+    return student.cgpa >= 3.75;
+});
 ```
 
-The second version works because an arrow function with a single expression can return that expression implicitly.
+This keeps only students who meet the condition.
 
-This connects the arrow function concepts from Day 47 with the callback and array method concepts learned during Day 50.
+This distinction is important when deciding which array method to use.
+
+---
+
+## 5. `filter()` with `&&`
+
+Multiple conditions can be combined using the logical AND operator `&&`.
+
+For example:
+
+```javascript
+const selectedStudents = students.filter((student) => {
+    return student.cgpa >= 3.75 &&
+           student.department === "Computer Science";
+});
+```
+
+The `&&` operator means both conditions must be true.
+
+The logic is:
+
+```text
+Condition A → true
+Condition B → true
+------------------
+Result → true → KEEP
+```
+
+If either condition is false, the student is removed.
+
+This allows filtering rules to become more specific.
+
+---
+
+## 6. `filter()` with `||`
+
+The logical OR operator `||` can be used when at least one condition should be true.
+
+For example:
+
+```javascript
+const selectedStudents = students.filter((student) => {
+    return student.department === "Software Engineering" ||
+           student.cgpa >= 3.80;
+});
+```
+
+The logic is:
+
+```text
+true  || false → true
+false || true  → true
+true  || true  → true
+false || false → false
+```
+
+Therefore, an item is kept when either condition passes.
+
+This is useful when there are multiple ways for an item to qualify.
+
+---
+
+## 7. `filter()` with `!==`
+
+The `!==` operator can be used to remove items matching a particular value.
+
+For example:
+
+```javascript
+const nonCSStudents = students.filter((student) => {
+    return student.department !== "Computer Science";
+});
+```
+
+The condition asks whether the student's department is not Computer Science.
+
+Students from other departments pass the condition and remain in the new array.
+
+This demonstrated that filtering can be used both to select desired values and to exclude unwanted categories.
+
+---
+
+## 8. Filtering Strings
+
+`filter()` can work with string properties as well as numbers.
+
+For example:
+
+```javascript
+const softwareStudents = students.filter((student) => {
+    return student.department === "Software Engineering";
+});
+```
+
+Here the student's department is compared with a string.
+
+This demonstrated that `filter()` can be used with different types of data as long as the callback produces the required boolean result.
+
+---
+
+## 9. Complex Filtering Conditions
+
+Several conditions can be combined to create more specific filtering rules.
+
+For example:
+
+```javascript
+const selectedStudents = students.filter((student) => {
+    return (
+        (student.department === "Computer Science" &&
+         student.cgpa >= 3.70) ||
+        student.department === "Software Engineering"
+    );
+});
+```
+
+Parentheses help group related conditions together.
+
+The logic can be understood as:
+
+```text
+Computer Science
+      ↓
+CGPA >= 3.70
+      ↓
+Both must be true
+
+        OR
+
+Software Engineering
+```
+
+This demonstrates how `filter()` can be used with more realistic application requirements.
+
+---
+
+## 10. Using the Index with `filter()`
+
+The `filter()` callback can also receive the current index.
+
+For example:
+
+```javascript
+students.filter((student, index) => {
+    return index < 2;
+});
+```
+
+The callback parameters are:
+
+```text
+student → current item
+index   → current position
+```
+
+The index starts at `0`, just like other JavaScript array methods.
+
+Therefore:
+
+```text
+index 0 → first student
+index 1 → second student
+index 2 → third student
+```
+
+The index can be used when the position of an item matters.
+
+However, the index is optional and should only be included when it is actually needed.
+
+---
+
+## 11. Understanding What `filter()` Returns
+
+Another important concept was understanding that `filter()` returns a new array containing the original items that passed the condition.
+
+For example:
+
+```javascript
+const qualifiedStudents = students.filter((student) => {
+    return student.cgpa >= 3.75;
+});
+```
+
+If two students pass the condition, the resulting array contains those two student objects.
+
+The objects themselves are not transformed.
+
+The process is:
+
+```text
+students
+   ↓
+filter()
+   ↓
+matching student objects
+   ↓
+qualifiedStudents
+```
+
+This is different from `map()`, where the callback determines what each item becomes.
+
+---
+
+## 12. Combining `filter()` and `map()`
+
+One of the most useful concepts learned during Day 51 was combining `filter()` and `map()`.
+
+For example:
+
+```javascript
+const qualifiedNames = students
+    .filter((student) => student.cgpa >= 3.75)
+    .map((student) => student.name);
+```
+
+The first method filters the students.
+
+The second method transforms the filtered students into names.
+
+The process is:
+
+```text
+students
+   ↓
+filter()
+   ↓
+qualified students
+   ↓
+map()
+   ↓
+student names
+```
+
+This demonstrates that each method can perform a separate job.
+
+`filter()` decides which items are needed.
+
+`map()` decides what those selected items should become.
+
+---
+
+## 13. Method Chaining
+
+Calling one array method after another is called method chaining.
+
+For example:
+
+```javascript
+const qualifiedNames = students
+    .filter((student) => student.cgpa >= 3.75)
+    .map((student) => student.name);
+```
+
+The result of `filter()` becomes the array that `map()` operates on.
+
+The chain can be read from top to bottom:
+
+```text
+students
+   ↓
+filter students
+   ↓
+keep matching students
+   ↓
+map their names
+   ↓
+qualifiedNames
+```
+
+This is a common pattern in JavaScript because it allows different operations to be connected together.
+
+---
+
+## 14. `filter()` Followed by Object Transformation
+
+`filter()` can also be followed by `map()` when the selected objects need to be transformed into a different structure.
+
+For example:
+
+```javascript
+const studentResults = students
+    .filter((student) => student.cgpa >= 3.75)
+    .map((student) => {
+        return {
+            name: student.name,
+            cgpa: student.cgpa,
+            status: "Qualified"
+        };
+    });
+```
+
+The first step selects qualified students.
+
+The second step creates new result objects from those students.
+
+This demonstrates how array methods can work together to create useful application data.
 
 ---
 
 # Practical Experience
 
-The Student Information project was used to practice `map()` with an array of student objects.
+The Student Information project was used throughout Day 51 to practice filtering real data.
 
-I first used `map()` with simple numbers to understand how individual values are transformed. I then applied the same concept to student objects by extracting names and CGPAs and creating formatted student messages.
+I first practiced filtering simple numerical arrays to understand how the callback returns `true` or `false`. I then applied the same concept to student objects by filtering students based on CGPA and department.
 
-After understanding basic transformations, I used `map()` to create new student objects containing additional information. I also used the index to generate student numbers and performed calculations using CGPA values.
+I practiced using comparison operators, `&&`, `||`, and `!==` to create different filtering rules. I also learned how parentheses can be used to group complex conditions and how the index can be accessed inside the callback when the position of an item is relevant.
 
-The final exercise combined `map()` with calculations and conditional logic to create student result data containing the student's number, name, CGPA, percentage, and performance status.
+After understanding filtering independently, I combined `filter()` with `map()`. This allowed me to first select the students I needed and then transform those selected students into names or new student result objects.
 
-This practical work helped me understand how `map()` can be used to process real application data and create new data structures without modifying the original array.
+This practical experience made the difference between selection and transformation much clearer. `filter()` determines which data remains, while `map()` determines what the selected data becomes.
 
 ---
 
 # Testing
 
-## Test 1 - Number Transformation
+## Test 1 - Number Filtering
 
-A numbers array was transformed using `map()` to verify that each original value could be converted into a new value.
+A numerical array was filtered using a comparison condition.
 
-The test confirmed that the transformed values were collected into a new array while the original array remained unchanged.
+The test confirmed that only numbers satisfying the condition were included in the resulting array.
 
-## Test 2 - Student Name Extraction
+## Test 2 - Student CGPA Filtering
 
-The students array was mapped to extract only student names.
+Students were filtered based on a minimum CGPA requirement.
 
-This confirmed that object properties can be transformed into a new array of simpler values.
+The test confirmed that only students meeting the CGPA condition were included.
 
-## Test 3 - Student CGPA Extraction
+## Test 3 - Student Department Filtering
 
-The students array was mapped to extract CGPA values.
+Students were filtered using their department property.
 
-This confirmed that `map()` can return numerical values as well as strings.
+This confirmed that `filter()` can work with string comparisons and object properties.
 
-## Test 4 - Student Message Transformation
+## Test 4 - Multiple Conditions
 
-Each student object was transformed into a formatted message containing the student's name and CGPA.
+Multiple conditions were tested using `&&`.
 
-This confirmed that objects can be transformed into strings.
+The test confirmed that all required conditions needed to be true for the student to remain in the result.
 
-## Test 5 - New Student Objects
+## Test 5 - Alternative Conditions
 
-Each student was transformed into a new object containing selected properties and additional information.
+The `||` operator was used to allow students to qualify through different conditions.
 
-This confirmed that `map()` can create new object structures.
+This confirmed that at least one condition must be true for the item to remain.
 
-## Test 6 - Index Transformation
+## Test 6 - Exclusion Condition
 
-The student index was used to generate human-readable student numbers.
+The `!==` operator was used to exclude students from a particular department.
 
-This confirmed that the `map()` callback can receive both the current item and its index.
+This confirmed that `filter()` can also be used to remove unwanted categories.
 
-## Test 7 - Student Percentage
+## Test 7 - Index Filtering
 
-The CGPA was used to calculate a percentage for each student.
+The callback index was used as part of a filtering condition.
 
-This confirmed that calculations can be performed during a `map()` transformation.
+This confirmed that `filter()` provides access to both the current item and its index.
 
-## Test 8 - Student Performance
+## Test 8 - Filter and Map Chaining
 
-Conditional logic was used to assign performance statuses based on percentage.
+`filter()` was combined with `map()` to first select students and then transform their data.
 
-The final transformation successfully created student result data containing the student's number, name, CGPA, percentage, and performance status.
+The test confirmed that the result of `filter()` can be passed directly into `map()` through method chaining.
+
+## Test 9 - Filtered Student Objects
+
+Filtered students were transformed into new result objects.
+
+This confirmed that filtering and transformation can be combined to create useful derived application data.
 
 ---
 
 # Previous Concepts Used
 
-Day 50 built upon concepts learned during previous JavaScript lessons:
+Day 51 built upon concepts learned during previous JavaScript lessons:
 
 - Variables
 - `const`
@@ -499,11 +599,16 @@ Day 50 built upon concepts learned during previous JavaScript lessons:
 - Implicit return
 - Callback functions
 - `forEach()`
+- `map()`
 - `if`
 - `else if`
 - `else`
 - Comparison operators
 - `>=`
+- `!==`
+- `&&`
+- `||`
+- Parentheses
 - Arithmetic operators
 - `console.log()`
 
@@ -511,28 +616,28 @@ Day 50 built upon concepts learned during previous JavaScript lessons:
 
 # What I Learned
 
-Day 50 taught me how to use the JavaScript `map()` method to transform array data.
+Day 51 taught me how to use the JavaScript `filter()` method to select specific items from an array.
 
-I learned that `map()` executes a callback function once for every item in an array and uses the value returned by the callback to create a new array.
+I learned that `filter()` executes a callback for every item and uses the result of the condition to decide whether the item should remain in the new array. A `true` result keeps the item, while a `false` result removes it from the result.
 
-The most important lesson was understanding the difference between `forEach()` and `map()`. Although both methods use callback functions and process array items, their purposes are different. `forEach()` is mainly used when I want to perform an action for every item, while `map()` is used when I want to transform every item and create a new array containing the transformed results.
+The most important lesson was understanding the difference between `filter()` and `map()`. `filter()` is used for selection, while `map()` is used for transformation. `filter()` answers the question of which items should remain, while `map()` answers the question of what each item should become.
 
-I learned that the value returned by the `map()` callback becomes an element in the new array. This made the connection between functions, `return`, callback functions, and array methods much clearer.
+I learned how to filter arrays containing objects by checking their properties. This included filtering students based on CGPA, department, and combinations of different requirements.
 
-I also learned that `map()` can transform data into different forms. A student object can become a string, a number, or another object depending on what the callback returns.
+I also learned how logical operators can make filtering more powerful. `&&` allows multiple requirements to be combined, while `||` allows an item to qualify through alternative conditions. The `!==` operator can be used when items matching a particular value should be excluded.
 
-I learned how to use the index inside a `map()` callback and how to perform calculations while transforming data. I also learned how conditional logic can be used during the transformation process to create useful derived information.
+Another important lesson was that `filter()` returns a new array containing the original matching items. It does not transform those objects. If the selected objects need to be transformed, `map()` can be used after `filter()`.
 
-Another important lesson was that the original array remains available after using `map()`. This means I can preserve the original student data while creating separate arrays containing transformed information.
+I also learned about method chaining. By chaining `filter()` and `map()`, I can first select the required data and then transform it. This pattern will become increasingly useful when working with real application data, API responses, databases, and collections of objects.
 
-Day 50 connected many previous JavaScript concepts together. Arrow functions provided the callback syntax, callback functions explained how `map()` receives a function, `return` explained how transformed values are produced, objects provided realistic data to transform, and `forEach()` provided a useful comparison for understanding why `map()` is needed.
+Day 51 connected several previous concepts together, including callback functions, arrow functions, `return`, objects, comparison operators, logical operators, and `map()`.
 
 ---
 
 # Project Structure
 
 ```text
-Day-50-JavaScript-map/
+Day-51-JavaScript-filter/
 
 │
 ├── index.html
@@ -552,10 +657,8 @@ Completed
 
 # Next Steps
 
-The next lesson will continue building on JavaScript array methods and callback functions.
+The next lesson will introduce the JavaScript `find()` method.
 
-The next major concept will be the `filter()` method. While `map()` is used to transform every item and create a new array containing the transformed results, `filter()` is used to test items against a condition and create a new array containing only the items that pass that condition.
+`find()` is related to `filter()` because both methods search through an array using a condition. The major difference is that `filter()` returns an array containing all matching items, while `find()` returns the first matching item.
 
-After learning `filter()`, I will gradually begin combining `map()`, `filter()`, and other array methods to process collections of student objects.
-
-This will move the Student Information project beyond simply storing and displaying information and toward more practical data processing, such as selecting students based on CGPA, creating filtered student lists, transforming those results, and eventually combining multiple array methods together.
+The next lesson will focus on understanding this difference, finding individual student objects, working with conditions, handling cases where no item is found, and understanding why `find()` is useful when only one matching item is needed.
