@@ -1,250 +1,62 @@
-# Fullstack Engineering Journey
+# Fullstack Journey
 
 ## Overview
 
-This repository documents a long-term software engineering journey focused on developing the knowledge, practical ability, and engineering discipline required to design, build, test, deploy, maintain, and improve modern software systems.
+This repository documents my long-term journey in software development, with a primary focus on Full-Stack Web Development and supporting knowledge in DevOps and Software Quality Assurance.
 
-The journey begins with fundamental web technologies and progressively moves toward full-stack application development, databases, testing, infrastructure, cloud platforms, backend engineering, and AI/ML integration.
+The journey is structured progressively, beginning with web fundamentals and JavaScript, then moving toward modern frontend development, backend development, databases, testing, containerization, CI/CD, and cloud deployment.
 
-The purpose of this repository is not to collect tutorials or demonstrate isolated knowledge of programming languages and frameworks. Each stage is intended to build upon the previous stages and gradually develop the ability to solve increasingly complex engineering problems.
+The goal is to develop the ability to build complete applications and understand the engineering practices required to develop, test, deploy, and maintain them.
 
-The learning process follows a continuous cycle:
+The learning process follows:
 
 ```text
-Understand
-    ↓
+Learn
+  ↓
 Practice
-    ↓
-Implement
-    ↓
-Debug
-    ↓
-Test
-    ↓
+  ↓
 Build
-    ↓
+  ↓
+Debug
+  ↓
+Test
+  ↓
 Deploy
-    ↓
-Document
-    ↓
-Review
-    ↓
+  ↓
 Improve
 ```
 
-The repository therefore serves both as a learning record and as a long-term engineering portfolio.
-
 ---
 
-# Objectives
+# Learning Roadmap
 
-The primary objectives of this journey are to develop the ability to:
+## 1. HTML & CSS
 
-- Build reliable web applications from the ground up.
-- Understand both frontend and backend development.
-- Design and consume APIs.
-- Work effectively with relational and NoSQL databases.
-- Write maintainable and testable software.
-- Debug problems systematically.
-- Understand operating systems and networking fundamentals.
-- Containerize and deploy applications.
-- Build automated CI/CD workflows.
-- Work with cloud infrastructure.
-- Apply security principles throughout development.
-- Integrate AI and machine learning capabilities into software applications.
-- Understand software architecture and system design.
-- Develop engineering habits applicable to professional software development.
-
-The ultimate objective is not mastery of a particular framework. The objective is to develop transferable engineering skills that remain useful as technologies and frameworks change.
-
----
-
-# Engineering Philosophy
-
-The journey follows several principles.
-
-## 1. Fundamentals Before Abstraction
-
-Frameworks and libraries are introduced after the underlying concepts are sufficiently understood.
-
-For example:
-
-```text
-HTML / CSS
-    ↓
-JavaScript
-    ↓
-TypeScript
-    ↓
-React
-    ↓
-Next.js
-```
-
-Similarly:
-
-```text
-HTTP
-    ↓
-Backend fundamentals
-    ↓
-Node.js
-    ↓
-Express
-    ↓
-API architecture
-```
-
-Understanding the underlying technology makes framework-specific knowledge easier to transfer.
-
----
-
-## 2. Practice Through Implementation
-
-Concepts should be implemented rather than only read about.
-
-A typical learning progression is:
-
-```text
-Concept
-    ↓
-Small Example
-    ↓
-Exercise
-    ↓
-Feature
-    ↓
-Mini Project
-    ↓
-Larger Project
-    ↓
-Production Improvements
-```
-
-This allows theoretical knowledge to become practical ability.
-
----
-
-## 3. Integration Over Isolation
-
-Technologies should eventually be used together.
-
-For example, a mature application may combine:
-
-```text
-Frontend
-    ↓
-React / Next.js
-    ↓
-API
-    ↓
-Backend
-    ↓
-Authentication
-    ↓
-PostgreSQL
-    ↓
-Testing
-    ↓
-Docker
-    ↓
-CI/CD
-    ↓
-AWS
-```
-
-Learning each technology independently is useful initially, but engineering ability develops when those technologies must work together.
-
----
-
-## 4. Build Before Optimizing
-
-The initial objective is to produce a working system.
-
-After functionality is established, the system can be improved through:
-
-- Refactoring
-- Testing
-- Security
-- Performance
-- Reliability
-- Maintainability
-- Observability
-- Deployment improvements
-
-This creates a natural progression from:
-
-```text
-Working
-    ↓
-Correct
-    ↓
-Maintainable
-    ↓
-Tested
-    ↓
-Secure
-    ↓
-Reliable
-    ↓
-Production-ready
-```
-
----
-
-# Curriculum
-
-## Phase 1 — HTML and CSS
-
-The first stage establishes the foundation of web development.
-
-### HTML
+The foundation of web development.
 
 Topics include:
 
-- Document structure
+- HTML5
 - Semantic HTML
-- Headings and text
-- Links
-- Images
-- Lists
-- Tables
 - Forms
-- Input controls
-- Accessibility fundamentals
-- Page structure
-- Semantic organization
-
-### CSS
-
-Topics include:
-
+- CSS fundamentals
 - Selectors
-- Specificity
-- Classes and IDs
-- Box model
-- Display
-- Positioning
-- Typography
-- Colors
-- Spacing
+- Box Model
 - Flexbox
 - CSS Grid
-- Responsive design
-- Media queries
-- Layout systems
-- Transitions
-- Animations
-- Modern CSS techniques
-- Reusable styling patterns
+- Responsive Design
+- Media Queries
+- Layout techniques
+- Modern CSS
+- Transitions and animations
 
-The objective of this phase is to become comfortable constructing responsive interfaces without relying on frameworks.
+The objective is to develop a strong understanding of how web pages are structured, styled, and made responsive.
 
 ---
 
-# Phase 2 — JavaScript
+## 2. JavaScript
 
-JavaScript provides the programming foundation for the application layer.
+JavaScript forms the programming foundation of the journey.
 
 Topics include:
 
@@ -255,61 +67,49 @@ Topics include:
 - Loops
 - Functions
 - Parameters
-- Arguments
 - Return values
 - Arrays
 - Objects
 - Array methods
 - Callback functions
-- Scope
 - DOM manipulation
 - Events
 - Forms
 - Validation
-- Error handling
-- Modern JavaScript syntax
-- Destructuring
-- Spread and rest syntax
+- Modern JavaScript
 - Modules
+- Asynchronous JavaScript
 - Promises
-- Asynchronous programming
 - `async/await`
 - Fetch API
-- Working with external APIs
+- Working with APIs
 
-Particular emphasis is placed on understanding how JavaScript works rather than memorizing framework-specific patterns.
+The focus is on understanding JavaScript fundamentals before relying heavily on frameworks.
 
 ---
 
-# Phase 3 — TypeScript
+## 3. TypeScript
 
-TypeScript introduces static typing and stronger development practices.
+TypeScript is introduced to improve type safety and maintainability in larger applications.
 
 Topics include:
 
-- Primitive types
-- Type annotations
+- Types
 - Type inference
-- Arrays
-- Objects
 - Interfaces
 - Type aliases
 - Union types
-- Intersection types
 - Function types
 - Generics
 - Type narrowing
 - Utility types
-- Optional properties
 - Type-safe application development
-
-The objective is to improve reliability and maintainability when applications become larger.
 
 ---
 
-# Phase 4 — React
+## 4. React
 
-React introduces component-based frontend engineering.
+React is used to develop modern component-based frontend applications.
 
 Topics include:
 
@@ -328,15 +128,13 @@ Topics include:
 - Component composition
 - State management
 - API integration
-- Reusable component architecture
-
-The focus gradually shifts from individual pages toward reusable application architecture.
+- Reusable components
 
 ---
 
-# Phase 5 — Next.js
+## 5. Next.js
 
-Next.js extends frontend knowledge into modern full-stack web application development.
+Next.js extends the frontend foundation into modern full-stack web application development.
 
 Topics include:
 
@@ -345,21 +143,18 @@ Topics include:
 - Server Components
 - Client Components
 - Data fetching
-- Server-side functionality
 - API routes
 - Authentication
 - Middleware
-- Application architecture
-- Performance considerations
+- Server-side functionality
+- Application structure
 - Deployment
-
-The objective is to understand how modern web applications combine frontend and server capabilities.
 
 ---
 
-# Phase 6 — Backend Engineering
+## 6. Backend Development
 
-The backend stage introduces server-side application development.
+Backend development introduces server-side programming and API development.
 
 Primary technologies:
 
@@ -369,71 +164,49 @@ Primary technologies:
 Topics include:
 
 - HTTP
-- Request and response lifecycle
 - REST APIs
 - Routing
 - Controllers
 - Middleware
 - Authentication
 - Authorization
-- Input validation
+- Validation
 - Error handling
 - API architecture
 - Security fundamentals
-- Backend project organization
+- Backend project structure
 - Environment configuration
-- Service-layer design
-
-The objective is to build APIs that can support real applications rather than only simple demonstrations.
 
 ---
 
-# Phase 7 — Database Engineering
+## 7. Databases
 
-The database stage covers both relational and NoSQL approaches.
+The journey includes both SQL and NoSQL databases.
 
-## PostgreSQL
+### PostgreSQL & Prisma
 
-PostgreSQL is the primary relational database.
+PostgreSQL is used as the primary relational database.
 
 Topics include:
 
-- Relational database concepts
+- SQL fundamentals
 - Tables
-- Rows and columns
+- Relationships
 - Primary keys
 - Foreign keys
-- Relationships
-- Constraints
 - CRUD operations
-- SQL queries
-- Filtering
-- Sorting
-- Aggregation
+- Queries
 - Joins
+- Aggregation
 - Indexes
 - Transactions
-- Data modeling
-- Query optimization
-
-## Prisma
-
-Prisma is used as the primary ORM.
-
-Topics include:
-
-- Schema definition
-- Models
-- Relationships
+- Database design
+- Prisma ORM
 - Migrations
-- Queries
-- CRUD operations
-- Type-safe database access
-- Application integration
 
-## MongoDB
+### MongoDB
 
-MongoDB provides the NoSQL perspective.
+MongoDB provides experience with NoSQL data storage.
 
 Topics include:
 
@@ -442,67 +215,48 @@ Topics include:
 - CRUD operations
 - Queries
 - Data modeling
-- Embedded data
-- References
 - Indexes
 - Application integration
 
-The purpose of learning both database models is to understand the trade-offs between relational and document-oriented data systems.
-
 ---
 
-# Phase 8 — Full-Stack Application Development
+# 8. Full-Stack Projects
 
-The separate frontend, backend, and database skills are combined into complete applications.
+The frontend, backend, and database knowledge are progressively combined into complete applications.
 
-The progression is approximately:
+The project progression follows:
 
 ```text
 Frontend
-    ↓
+   ↓
+Frontend + JavaScript
+   ↓
 Frontend + API
-    ↓
+   ↓
 Frontend + Backend
-    ↓
+   ↓
 Backend + Database
-    ↓
+   ↓
 Authentication
-    ↓
-Authorization
-    ↓
-Validation
-    ↓
+   ↓
 Testing
-    ↓
-Docker
-    ↓
+   ↓
+Containerization
+   ↓
 CI/CD
-    ↓
-Cloud Deployment
+   ↓
+Deployment
 ```
 
-Projects should progressively demonstrate:
+Projects gradually become more complete and realistic as new concepts are introduced.
 
-- Application architecture
-- Authentication
-- Authorization
-- Database design
-- API design
-- Error handling
-- Validation
-- Security
-- Testing
-- Deployment
-- Documentation
-- Maintainability
-
-The emphasis shifts from simply making applications work toward building systems that can realistically be maintained.
+The emphasis is on understanding how different parts of an application work together rather than building isolated demonstrations.
 
 ---
 
-# Phase 9 — Testing and Quality Assurance
+# 9. Software Quality Assurance
 
-Testing is treated as an engineering discipline rather than a final step performed after development.
+Software Quality Assurance is included as a supporting part of the development journey.
 
 Topics include:
 
@@ -514,77 +268,52 @@ Topics include:
 - End-to-end testing
 - API testing
 - UI testing
-- Mocking
 - Test automation
 - Regression testing
 - Test organization
-- Quality assurance
+- SQA practices
 - SDET concepts
 
-Testing will increasingly become part of the development lifecycle:
-
-```text
-Requirement
-    ↓
-Implementation
-    ↓
-Test
-    ↓
-Debug
-    ↓
-Refactor
-    ↓
-Verify
-```
-
-The objective is to develop software with confidence rather than relying entirely on manual verification.
+Testing is gradually integrated into development projects so that applications are not only functional but also verifiable and maintainable.
 
 ---
 
-# Phase 10 — Linux and Networking
+# 10. Linux & Networking
 
-Linux and networking provide the system-level foundation required for backend, DevOps, cloud, and security work.
+Linux and networking provide the foundation required for development and DevOps work.
 
-## Linux
+### Linux
 
 Topics include:
 
-- Filesystem
+- Command line
 - Files and directories
 - Permissions
-- Users and groups
 - Processes
 - Services
 - Environment variables
-- Package management
-- Shell usage
 - SSH
 - Logs
-- System administration fundamentals
+- Basic system administration
 
-## Networking
+### Networking
 
 Topics include:
 
-- IP addressing
+- IP addresses
 - DNS
 - Ports
-- TCP
-- UDP
+- TCP/IP
 - HTTP
 - HTTPS
-- Requests and responses
-- Routing fundamentals
-- Network troubleshooting
 - Client-server communication
-
-The objective is to understand what happens beneath an application rather than treating infrastructure as a black box.
+- Basic network troubleshooting
 
 ---
 
-# Phase 11 — Docker
+# 11. Docker
 
-Docker introduces containerized application development.
+Docker introduces containerization and reproducible application environments.
 
 Topics include:
 
@@ -595,18 +324,14 @@ Topics include:
 - Volumes
 - Networks
 - Environment variables
+- Containerized applications
 - Containerized databases
-- Multi-container applications
-- Container management
-- Deployment considerations
-
-The objective is to make application environments reproducible and easier to deploy.
 
 ---
 
-# Phase 12 — CI/CD
+# 12. CI/CD
 
-Continuous integration and delivery introduce automated software workflows.
+Continuous Integration and Continuous Delivery are introduced to automate development workflows.
 
 Primary platform:
 
@@ -614,23 +339,20 @@ Primary platform:
 
 Topics include:
 
-- Workflow configuration
 - Automated builds
 - Automated testing
-- Continuous integration
-- Deployment pipelines
+- Workflows
 - Environment variables
 - Secrets
-- Deployment automation
-- Pipeline troubleshooting
-
-The objective is to reduce repetitive manual processes and establish reliable software delivery practices.
+- Deployment pipelines
+- Continuous Integration
+- Continuous Delivery
 
 ---
 
-# Phase 13 — Cloud Engineering
+# 13. Cloud & DevOps
 
-Cloud infrastructure introduces production deployment and operational concerns.
+Cloud and DevOps concepts are introduced after the fundamentals of development, Linux, networking, and Docker.
 
 Primary platform:
 
@@ -643,66 +365,20 @@ Topics include:
 - Storage
 - Networking
 - IAM
-- Databases
+- Application deployment
 - Security
 - Monitoring
-- Application deployment
-- Infrastructure fundamentals
-- Cost awareness
-- Reliability considerations
+- Basic cloud architecture
 
-The objective is to understand how applications operate beyond the local development environment.
+The purpose of this stage is to understand how applications move from a development environment toward a deployed environment.
 
 ---
 
-# Phase 14 — Python and FastAPI
+# Continuous Practice — DSA
 
-Python expands backend capabilities and provides a natural bridge toward AI and machine learning.
+Data Structures and Algorithms are practiced alongside the main journey.
 
 Topics include:
-
-- Python fundamentals
-- Backend development
-- FastAPI
-- REST APIs
-- Request validation
-- Authentication
-- Database integration
-- API documentation
-- Async programming
-- Production deployment
-
-The objective is not to replace the primary JavaScript stack, but to develop the ability to work effectively across multiple backend ecosystems.
-
----
-
-# Phase 15 — AI and Machine Learning Integration
-
-AI and machine learning are developed alongside the software engineering foundation.
-
-Topics include:
-
-- Python
-- NumPy
-- Pandas
-- Data processing
-- Machine learning fundamentals
-- Model training
-- Model evaluation
-- Model deployment
-- AI APIs
-- AI-powered applications
-- Machine learning integration
-
-The primary engineering goal is to become capable of building reliable software systems that use AI/ML capabilities effectively.
-
----
-
-# Continuous Track — Data Structures and Algorithms
-
-Data Structures and Algorithms are practiced continuously rather than restricted to a single phase.
-
-Areas include:
 
 - Arrays
 - Strings
@@ -711,209 +387,52 @@ Areas include:
 - Sliding Window
 - Stack
 - Queue
-- Linked Lists
+- Linked List
 - Binary Search
 - Trees
-- Heaps
+- Heap
 - Graphs
-- Greedy Algorithms
+- Greedy
 - Dynamic Programming
 - Backtracking
 
-The difficulty increases progressively.
-
-The purpose is to develop:
-
-- Problem-solving ability
-- Algorithmic thinking
-- Complexity analysis
-- Pattern recognition
-- Coding interview readiness
-- General programming fluency
+The difficulty and complexity of problems increase gradually.
 
 ---
 
-# Continuous Track — Security
+# Project Development Approach
 
-Cybersecurity learning runs alongside the software engineering journey.
+Projects follow an incremental approach.
 
-Areas include:
+```text
+Basic Functionality
+        ↓
+Better Structure
+        ↓
+Validation
+        ↓
+Error Handling
+        ↓
+Testing
+        ↓
+Security
+        ↓
+Performance
+        ↓
+Containerization
+        ↓
+CI/CD
+        ↓
+Deployment
+```
 
-- Linux
-- Networking
-- Web security
-- Enumeration
-- Authentication
-- Authorization
-- Common vulnerabilities
-- Defensive concepts
-- Security testing
-- Capture-the-Flag exercises
+Not every project will contain every stage.
 
-Security concepts should increasingly be incorporated into application development rather than treated as an isolated subject.
-
----
-
-# Continuous Track — Engineering Practices
-
-The following practices are reinforced throughout the entire journey:
-
-## Code Quality
-
-- Readability
-- Consistent structure
-- Meaningful naming
-- Separation of concerns
-- Reusability
-- Refactoring
-- Maintainability
-
-## Debugging
-
-- Reproducing problems
-- Reading errors
-- Isolating causes
-- Testing assumptions
-- Applying controlled fixes
-- Verifying solutions
-
-## Testing
-
-- Unit tests
-- Integration tests
-- End-to-end tests
-- Regression prevention
-
-## Security
-
-- Input validation
-- Authentication
-- Authorization
-- Secure configuration
-- Dependency awareness
-- Common web vulnerabilities
-
-## Performance
-
-- Efficient algorithms
-- Database indexing
-- Network efficiency
-- Application performance
-- Resource management
-
-## Documentation
-
-- Project documentation
-- Technical explanations
-- Architecture documentation
-- API documentation
-- Development notes
-
-## Deployment
-
-- Environment configuration
-- Containers
-- CI/CD
-- Cloud deployment
-- Monitoring
-- Operational awareness
+The technologies and practices introduced in a project depend on what has already been learned at that point in the journey.
 
 ---
 
-# Project Progression
-
-Projects are expected to become progressively more sophisticated.
-
-## Level 1 — Foundation Projects
-
-Focus:
-
-- HTML
-- CSS
-- JavaScript
-- DOM
-- Forms
-- Basic interaction
-
-Objective:
-
-Build confidence with fundamental web development.
-
----
-
-## Level 2 — Application Projects
-
-Focus:
-
-- JavaScript
-- React
-- APIs
-- State management
-- Client-side architecture
-
-Objective:
-
-Build applications that consume and manipulate real data.
-
----
-
-## Level 3 — Full-Stack Projects
-
-Focus:
-
-- React / Next.js
-- Backend APIs
-- Authentication
-- PostgreSQL
-- Prisma
-- MongoDB
-
-Objective:
-
-Build complete applications with persistent data and user accounts.
-
----
-
-## Level 4 — Production-Oriented Projects
-
-Focus:
-
-- Testing
-- Security
-- Docker
-- CI/CD
-- AWS
-- Monitoring
-- Performance
-- Error handling
-
-Objective:
-
-Transform functional applications into production-oriented systems.
-
----
-
-## Level 5 — Advanced Engineering Projects
-
-Focus:
-
-- Architecture
-- Scalability
-- Distributed systems concepts
-- Advanced backend development
-- Cloud infrastructure
-- AI/ML integration
-- System design
-
-Objective:
-
-Develop the ability to reason about larger and more complex software systems.
-
----
-
-# Repository Organization
-
-The repository is organized around the progression of the journey.
+# Repository Structure
 
 ```text
 Fullstack_Journey/
@@ -940,7 +459,7 @@ Fullstack_Journey/
 │
 ├── Fullstack-Projects/
 │
-├── Testing-QA/
+├── SQA/
 │
 ├── Linux-Networking/
 │
@@ -950,216 +469,77 @@ Fullstack_Journey/
 │
 ├── AWS/
 │
-├── Python-FastAPI/
-│
-├── AI-ML-Integration/
-│
 └── README.md
 ```
 
-The structure may evolve as the scope of the journey grows.
+The structure may evolve as the journey progresses.
 
-Daily learning documentation belongs inside the appropriate daily or project directories.
-
-This root README is intentionally independent of individual daily progress so that it does not require modification after every lesson.
+Daily lessons and projects contain their own detailed documentation, while this README provides the overall structure of the repository.
 
 ---
 
-# Daily Learning Documentation
+# Documentation
 
-Individual daily lessons document the detailed work performed during the journey.
+Daily documentation records the concepts, exercises, practical work, and lessons learned throughout the journey.
 
-A daily entry may contain:
+Project documentation records the purpose, implementation, structure, testing, and development decisions of individual projects.
 
-- Overview
-- Project objective
-- Concepts learned
-- Practical implementation
-- Testing
-- Previous concepts used
-- What was learned
-- Project structure
-- Completion status
-
-The daily documentation provides the chronological history of the journey.
-
-The root README provides the permanent structure and direction of the repository.
+The root README is intentionally kept independent of daily progress so it does not need to be updated after every lesson.
 
 ---
 
-# Learning and Development Cycle
+# Learning Principles
 
-Every major stage follows the same fundamental development cycle:
+## Fundamentals First
+
+Understand the underlying concepts before depending heavily on abstractions and frameworks.
+
+## Practice Through Building
+
+Concepts should be reinforced through implementation and practical projects.
+
+## Progressive Complexity
+
+Projects and problems become more complex as the required knowledge develops.
+
+## Test What Is Built
+
+Testing is treated as part of development rather than something added only at the end.
+
+## Understand the Full Lifecycle
+
+Development extends beyond writing code:
 
 ```text
-Learn the concept
-        ↓
-Understand the underlying mechanism
-        ↓
-Implement a small example
-        ↓
-Solve a problem
-        ↓
-Build a feature
-        ↓
-Integrate the feature
-        ↓
-Test the implementation
-        ↓
-Debug failures
-        ↓
-Refactor the solution
-        ↓
-Document the result
-        ↓
-Apply the knowledge to a larger project
-```
-
-This prevents the journey from becoming a sequence of disconnected tutorials.
-
----
-
-# Long-Term Development
-
-The roadmap is intentionally designed as a long-term progression rather than a fixed technology checklist.
-
-Technologies, frameworks, tools, and development practices may change over time.
-
-The underlying engineering principles should remain:
-
-```text
-Strong Fundamentals
-        +
-Problem Solving
-        +
-Practical Development
-        +
+Development
+    ↓
 Testing
-        +
-System Understanding
-        +
-Security
-        +
+    ↓
+Containerization
+    ↓
+Automation
+    ↓
 Deployment
-        +
-Continuous Improvement
+    ↓
+Maintenance
 ```
 
-When a technology becomes obsolete or a better tool becomes appropriate, the roadmap can evolve without changing its fundamental objective.
+## Continuous Improvement
+
+Previously learned concepts are revisited and combined with newer concepts to strengthen understanding.
 
 ---
 
-# Career-Oriented Development
+# Journey Status
 
-The journey is designed to develop skills applicable to multiple software engineering roles.
+**Status:** In Progress
 
-Potential areas include:
+**Primary Focus:** Full-Stack Development
 
-- Full-Stack Development
-- Backend Development
-- Frontend Development
-- QA Engineering
-- SDET
-- DevOps
-- Cloud Engineering
-- Platform Engineering
-- AI/ML Application Engineering
+**Supporting Areas:** DevOps, SQA, DSA
 
-The purpose is to establish a broad engineering foundation first and progressively develop deeper specialization.
+**Approach:** Learn → Practice → Build → Test → Deploy → Improve
 
 ---
 
-# Long-Term Engineering Direction
-
-The progression is intended to move from implementation toward system-level responsibility.
-
-```text
-Programming Fundamentals
-        ↓
-Application Development
-        ↓
-Full-Stack Engineering
-        ↓
-Production Engineering
-        ↓
-System Design
-        ↓
-Senior Engineering Capability
-        ↓
-Technical Leadership
-```
-
-Technical depth remains the foundation throughout this progression.
-
----
-
-# Progress Tracking
-
-Progress is recorded through:
-
-- Daily learning directories
-- Completed exercises
-- Projects
-- Testing implementations
-- Deployment work
-- Documentation
-- Problem-solving practice
-
-The repository should therefore be viewed as a chronological record of capability development rather than merely a list of completed technologies.
-
----
-
-# Current Focus
-
-The current focus is JavaScript development and the gradual transition from language fundamentals toward modern application development.
-
-The exact daily lesson number is intentionally not recorded in this root README.
-
-Daily progress belongs in the corresponding daily documentation.
-
-This prevents the repository overview from becoming outdated.
-
----
-
-# Definition of Progress
-
-Progress is not measured only by the number of technologies learned.
-
-A technology is considered meaningfully learned when it can be used to:
-
-1. Explain the underlying concept.
-2. Implement it without blindly copying code.
-3. Debug common failures.
-4. Use it with related technologies.
-5. Apply it to a practical problem.
-6. Test the implementation.
-7. Explain the design decisions.
-8. Use it as part of a larger system.
-
-The objective is therefore **capability rather than completion**.
-
----
-
-# Repository Status
-
-**Status:** Active
-
-**Type:** Long-Term Software Engineering Journey
-
-**Primary Direction:** Full-Stack Software Engineering
-
-**Supporting Areas:** DSA, Testing, DevOps, Cloud, Security, AI/ML
-
-**Learning Model:** Learn → Build → Test → Deploy → Improve
-
----
-
-# Final Principle
-
-The repository represents a long-term commitment to deliberate and consistent improvement.
-
-The objective is not to become proficient overnight.
-
-The objective is to continue learning, building, solving problems, reviewing mistakes, and improving engineering ability over an extended period of time.
-
-> **Consistency is the foundation of mastery.**
+> **Consistency is the foundation of progress.**
