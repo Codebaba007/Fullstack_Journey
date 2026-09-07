@@ -1,4 +1,4 @@
-# Day 59 — JavaScript DOM: Creating Elements Dynamically
+# Day 58 — JavaScript DOM: Creating Elements Dynamically
 
 ## Overview
 
@@ -379,7 +379,7 @@ parent.appendChild(child);
 
 ## Previous Concepts Used
 
-Day 59 builds on:
+Day 58 builds on:
 
 - Variables
 - `const`
