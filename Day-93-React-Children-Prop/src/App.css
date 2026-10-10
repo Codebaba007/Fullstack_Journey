@@ -1,0 +1,23 @@
+#root {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.info-box {
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #f9fafb;
+}
+
+.info-box h2 {
+    margin-top: 0;
+    color: #172554;
+}
+
+.info-box p {
+    color: #374151;
+}
