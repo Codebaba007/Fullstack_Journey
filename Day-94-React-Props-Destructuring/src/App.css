@@ -1,0 +1,41 @@
+#root {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+header p {
+    margin-bottom: 0;
+    color: #dbeafe;
+}
+
+.student-card {
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 20px;
+    background: #f9fafb;
+    color: #111827;
+}
+
+.student-card h2 {
+    margin-top: 0;
+}
