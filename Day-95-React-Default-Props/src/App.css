@@ -1,0 +1,99 @@
+
+#root {
+    width: 100%;
+}
+
+.dashboard {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px;
+}
+
+.dashboard-header {
+    background: #172554;
+    color: white;
+    padding: 28px;
+    border-radius: 14px;
+    margin-bottom: 24px;
+}
+
+.dashboard-header h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+}
+
+.dashboard-header p {
+    margin: 0;
+    color: #dbeafe;
+}
+
+.student-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.student-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.student-card h2 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    color: #111827;
+}
+
+.student-id {
+    margin: 0;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.status {
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.status-active {
+    color: #166534;
+    background: #dcfce7;
+}
+
+.status-pending {
+    color: #92400e;
+    background: #fef3c7;
+}
+
+.status-inactive {
+    color: #991b1b;
+    background: #fee2e2;
+}
+
+@media (max-width: 480px) {
+    .dashboard {
+        padding: 20px 14px;
+    }
+
+    .dashboard-header {
+        padding: 22px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 23px;
+    }
+
+    .student-card {
+        padding: 16px;
+    }
+}
