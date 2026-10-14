@@ -1,0 +1,48 @@
+
+#root {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 20px;
+}
+
+.dashboard {
+    font-family: Arial, sans-serif;
+}
+
+.dashboard h1 {
+    color: #172554;
+    margin-bottom: 24px;
+}
+
+.student-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.student-card {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.student-card h2 {
+    margin-top: 0;
+    color: #111827;
+}
+
+.student-card p {
+    color: #4b5563;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 480px) {
+    #root {
+        padding: 20px 14px;
+    }
+
+    .student-card {
+        padding: 16px;
+    }
+}
