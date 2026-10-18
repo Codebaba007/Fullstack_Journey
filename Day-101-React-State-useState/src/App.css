@@ -1,0 +1,31 @@
+.counter {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 32px;
+    text-align: center;
+    background-color: #f4f7fb;
+    border-radius: 12px;
+}
+
+.counter h1 {
+    margin-bottom: 20px;
+}
+
+.counter p {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.counter button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.counter button:hover {
+    background-color: #1d4ed8;
+}
