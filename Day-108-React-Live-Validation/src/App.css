@@ -1,0 +1,86 @@
+
+#root {
+  width: 100%;
+}
+
+.registration {
+  max-width: 440px;
+  margin: 40px auto;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.registration h1 {
+  margin-top: 0;
+  text-align: center;
+  color: #222222;
+}
+
+.subtitle {
+  margin-bottom: 28px;
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.form-group input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.form-group input[aria-invalid="true"] {
+  border-color: #d93025;
+}
+
+.error-message {
+  margin: 0;
+  color: #d93025;
+  font-size: 13px;
+}
+
+.registration button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.registration button:hover {
+  background: #1d4ed8;
+}
+
+.success-message {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #effaf2;
+  color: #176b32;
+  overflow-wrap: anywhere;
+}
