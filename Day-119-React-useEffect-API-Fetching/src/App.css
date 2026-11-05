@@ -1,0 +1,32 @@
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.user-card {
+  background: #f1f5f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+}
+
+.user-card h2 {
+  color: #2563eb;
+}
+
+.user-card p {
+  color: #475569;
+}
